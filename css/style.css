@@ -115,10 +115,30 @@ img {
   margin: 0;
   width: 50%;
 }
-.card-imagen img {
-  /* margin: 0; */
-  /* background-image: url(../assets/img/proyecto1.png);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat; */
+.contenedor-diplomas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.footer {
+  background-color: #2e3138;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer ul {
+  margin: 0;
+  padding: 0rem;
+  display: flex;
+}
+.footer ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer ul li a i {
+  font-size: 3rem;
 }
