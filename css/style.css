@@ -152,12 +152,6 @@ img {
   align-items: center;
   justify-content: space-evenly;
 }
-/* .navegacion {
-  display: flex;
-}
-.iconos {
-  display: flex;
-} */
 .iconos a i {
   color: #fff;
   font-size: 2.8rem;
