@@ -32,10 +32,34 @@ img {
   max-width: 100%;
 }
 /*Botones*/
+.boton {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+}
+.boton:hover {
+  cursor: pointer;
+}
+.boton-verde {
+  background-color: #c9f2c7;
+  text-align: right;
+}
+.botones {
+  display: flex;
+  justify-content: flex-end;
+}
 /*Utilidades*/
 .seccion {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.d-block {
+  display: block !important;
 }
 /*Header*/
 .site-header {
@@ -123,22 +147,19 @@ img {
 .footer {
   background-color: #2e3138;
   height: 10rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.footer ul {
-  margin: 0;
-  padding: 0rem;
+/* .navegacion {
   display: flex;
 }
-.footer ul li {
-  list-style: none;
+.iconos {
+  display: flex;
+} */
+.iconos a i {
+  color: #fff;
+  font-size: 2.8rem;
   margin-right: 2rem;
-}
-.footer ul li a {
-  text-decoration: none;
-}
-.footer ul li a i {
-  font-size: 3rem;
 }
