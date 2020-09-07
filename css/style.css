@@ -8,6 +8,7 @@
   --badgeHtml: #f06543;
   --badgeCss: #53a2be;
   --textBadge: #fff;
+  --backgroundFooter: ;
 }
 html {
   /* Reset para rems 62.5% = 10px */
