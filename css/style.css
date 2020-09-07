@@ -1,4 +1,13 @@
 :root {
+  --textoBoton: #fff;
+  --backgroundBoton: #048ba8;
+  --backgroundHeader: #2f2d2e;
+  --textH1: #2f2d2e;
+  --colorAHeader: #fff;
+  --colorACard: #2f2d2e;
+  --badgeHtml: #f06543;
+  --badgeCss: #53a2be;
+  --textBadge: #fff;
 }
 html {
   /* Reset para rems 62.5% = 10px */
@@ -33,7 +42,7 @@ img {
 }
 /*Botones*/
 .boton {
-  color: #000;
+  color: var(--textoBoton);
   font-weight: 700;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -46,7 +55,8 @@ img {
   cursor: pointer;
 }
 .boton-verde {
-  background-color: #c9f2c7;
+  /* background-color: #c9f2c7; */
+  background-color: var(--backgroundBoton);
   text-align: right;
 }
 .botones {
@@ -71,7 +81,7 @@ img {
 }
 /*Header*/
 .site-header {
-  background-color: #333;
+  background-color: var(--backgroundHeader);
   padding: 1rem 0 3rem 0;
 }
 .site-header.inicio {
@@ -89,7 +99,7 @@ img {
   justify-content: space-between;
 }
 .contenido-header h1 {
-  color: #fff;
+  color: var(--textH1);
   padding-bottom: 2rem;
   max-width: 50rem;
   line-height: 1.5;
@@ -102,7 +112,7 @@ img {
   line-height: 2;
 }
 .navegacion a {
-  color: #fff;
+  color: var(--colorAHeader);
   text-decoration: none;
   font-size: 1.8rem;
   margin-right: 2rem;
@@ -129,19 +139,20 @@ img {
 .texto-card a {
   text-decoration: none;
   text-align: center;
-  color: #000;
+  color: var(--colorACard);
 }
 .badge {
   border-radius: 1.5rem;
   width: 100%;
   margin-right: 0.8rem;
   padding: 0.8rem;
+  color: var(--textBadge);
 }
 .badge.html {
-  background-color: lightcoral;
+  background-color: var(--badgeHtml);
 }
 .badge.css {
-  background-color: lightblue;
+  background-color: var(--badgeCss);
 }
 .card-imagen {
   margin: 0;
