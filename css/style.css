@@ -7,6 +7,7 @@
   --colorACard: #2f2d2e;
   --badgeHtml: #f06543;
   --badgeCss: #53a2be;
+  --badgeJs: #f7df1e;
   --textBadge: #fff;
   --backgroundFooter: ;
 }
@@ -79,6 +80,7 @@ img {
   text-align: center;
 }
 .contenido-centrado {
+  max-width: 800px;
 }
 /*Header*/
 .site-header {
@@ -142,18 +144,29 @@ img {
   text-align: center;
   color: var(--colorACard);
 }
+.badge-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .badge {
-  border-radius: 1.5rem;
-  width: 100%;
+  border-radius: 50%;
   margin-right: 0.8rem;
-  padding: 0.8rem;
+  padding: 1.3rem;
   color: var(--textBadge);
+}
+.badge i {
+  text-align: center;
+  font-size: 2rem;
 }
 .badge.html {
   background-color: var(--badgeHtml);
 }
 .badge.css {
   background-color: var(--badgeCss);
+}
+.badge.js {
+  background-color: var(--badgeJs);
 }
 .card-imagen {
   margin: 0;
@@ -164,8 +177,16 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
 }
+.diploma-caption a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+}
 .footer {
-  background-color: #2e3138;
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
   height: 10rem;
   width: 100%;
   display: flex;
