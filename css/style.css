@@ -1,20 +1,48 @@
 :root {
-  --textoBoton: #fff;
-  --backgroundBoton: #048ba8;
-  --backgroundHeader: #344966;
-  --textH1: #2f2d2e;
-  --colorAHeader: #fff;
-  --colorACard: #2f2d2e;
   --badgeHtml: #f06543;
   --badgeCss: #53a2be;
   --badgeJs: #f7df1e;
+}
+html[data-theme="light"] {
+  --clr-secondary: #2ec1ac;
+  --textoBoton: #000;
+  --backgroundBoton: #5bc8e0;
+  --backgroundHeader: #344966;
+  --textH1: #fff;
+  --colorAHeader: #fff;
+  --colorACard: #2f2d2e;
   --textBadge: #fff;
-  --backgroundFooter: ;
+  --colorBackground: #fff;
+  --badge-text: #000;
+}
+html[data-theme="dark"] {
+  --clr-secondary: #2ec1ac;
+  --textoBoton: #000;
+  --backgroundBoton: #5bc8e0;
+  --backgroundHeader: #000;
+  --textH1: #fff;
+  --colorAHeader: #fff;
+  --colorACard: #2f2d2e;
+  --textBadge: #000;
+  --colorBackground: #000;
+  --badge-text: #fff;
 }
 html {
   /* Reset para rems 62.5% = 10px */
   box-sizing: border-box;
   font-size: 62.5%;
+}
+/*Toggle btn*/
+.theme-toggle {
+  position: fixed;
+  right: 10rem;
+}
+#theme-toggle-btn {
+  display: none;
+}
+.theme-toggle label {
+  cursor: pointer;
+  color: var(--clr-secondary);
 }
 *,
 *::before,
@@ -24,6 +52,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
+  background-color: var(--colorBackground);
 }
 /*Globales*/
 .contenedor {
@@ -32,15 +61,21 @@ body {
 }
 h1 {
   font-size: 3.8rem;
+  color: var(--textH1);
 }
 h2 {
   font-size: 3.4rem;
+  color: var(--textH1);
 }
 h4 {
   font-size: 2.6rem;
+  color: var(--textH1);
 }
 img {
   max-width: 100%;
+}
+p {
+  color: var(--badge-text);
 }
 /*Botones*/
 .boton {
@@ -113,6 +148,7 @@ img {
   align-items: center;
   padding-top: 3rem;
   line-height: 2;
+  position: relative;
   /* border: 1px solid black; */
 }
 .barra img {
