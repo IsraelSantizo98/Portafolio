@@ -5,9 +5,21 @@ themeToggleBtn.addEventListener("change", function () {
     document.documentElement.setAttribute("data-theme", "dark");
     toggleIcon.classList.remove("fa-moon");
     toggleIcon.classList.add("fa-sun");
+    localStorage.setItem("dark-mode", "true");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     toggleIcon.classList.remove("fa-sun");
     toggleIcon.classList.add("fa-moon");
+    localStorage.setItem("dark-mode", "false");
   }
 });
+//Obtener el modo actual del modo
+if (localStorage.getItem("dark-mode") === "true") {
+  document.documentElement.setAttribute("data-theme", "dark");
+  toggleIcon.classList.remove("fa-moon");
+  toggleIcon.classList.add("fa-sun");
+} else {
+  document.documentElement.setAttribute("data-theme", "light");
+  toggleIcon.classList.remove("fa-sun");
+  toggleIcon.classList.add("fa-moon");
+}
