@@ -7,7 +7,7 @@ html[data-theme="light"] {
   --clr-secondary: #2ec1ac;
   --textoBoton: #000;
   --backgroundBoton: #5bc8e0;
-  --backgroundHeader: #344966;
+  --backgroundHeader: #333;
   --textH1: #fff;
   --colorAHeader: #fff;
   --colorACard: #2f2d2e;
@@ -24,7 +24,7 @@ html[data-theme="dark"] {
   --colorAHeader: #fff;
   --colorACard: #2f2d2e;
   --textBadge: #000;
-  --colorBackground: #000;
+  --colorBackground: #181818;
   --badge-text: #fff;
 }
 html {
