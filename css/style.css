@@ -27,8 +27,18 @@ body {
 }
 /*Globales*/
 .contenedor {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
+}
+@media (max-width: 1024px){
+  .contenedor{
+    max-width: 90rem;
+  }
+}
+@media (max-width: 768px){
+    .contenedor{
+      max-width: 70rem;
+    }
 }
 h1 {
   font-size: 3.8rem;
@@ -201,6 +211,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 0;
 }
 .iconos a i {
   color: #fff;
