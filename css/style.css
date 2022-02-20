@@ -76,6 +76,9 @@ img {
 .fw-300 {
   font-weight: 300;
 }
+.fw-900{
+  font-weight: 900;
+}
 .centrar-texto {
   text-align: center;
 }
@@ -92,7 +95,7 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   min-height: 60rem;
 }
 .contenido-header {
@@ -104,14 +107,14 @@ img {
 .contenido-header h1 {
   color: var(--textH1);
   padding-bottom: 2rem;
-  max-width: 50rem;
   line-height: 1.5;
+  margin-left: 4rem;
 }
 .barra {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 1rem 0 1rem;
   line-height: 2;
   /* border: 1px solid black; */
 }
@@ -132,13 +135,10 @@ img {
 }
 .contenedor-card {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1.5rem;
-  /* border: 1px solid black; */
-  /* height: 40rem; */
-  /* width: 80%; */
 }
 .texto-card {
   width: 50%;
@@ -148,10 +148,14 @@ img {
   text-align: center;
   color: var(--colorACard);
 }
+.card-description{
+  line-height: 1.5;
+  padding: 0 1rem;
+}
 .badge-contenedor {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .badge {
   border-radius: 1.8rem;
